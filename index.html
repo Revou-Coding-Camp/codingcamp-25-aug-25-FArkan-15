@@ -1,11 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website Saya</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    HALOOOO
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">🏢</div>
+                Arkan Tech Solutions
+            </div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#" class="nav-link active" data-page="home">Beranda</a></li>
+                    <li><a href="#" class="nav-link" data-page="profile">Profil Kami</a></li>
+                    <li><a href="#" class="nav-link" data-page="portfolio">Portofolio</a></li>
+                    <li><a href="#" class="nav-link" data-page="message">Hubungi Kami</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileToggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <div class="page active" id="home">
+            <section class="welcome-section">
+                <h1 id="welcomeMessage">Halo, Selamat Datang di Website</h1>
+                <p>Selalu hadir memberikan sambutan hangat</p>
+            </section>
+
+            <section class="name-input-section">
+                <h2>Masukkan Nama Anda untuk Sambutan Pribadi</h2>
+                <input type="text" id="nameInput" placeholder="Masukkan nama anda...">
+                <button class="btn" onclick="updateWelcome()">Perbarui Sambutan</button>
+            </section>
+
+            <section class="headquarters">
+                <h2>Kantor Pusat Kami</h2>
+                <div class="headquarters-grid">
+                    <div class="headquarters-item">
+                        <div class="headquarters-icon">🏙️</div>
+                        <h3>Yogyakarta</h3>
+                    </div>
+                    <div class="headquarters-item">
+                        <div class="headquarters-icon">🌆</div>
+                        <h3>Jakarta</h3>
+                    </div>
+                    <div class="headquarters-item">
+                        <div class="headquarters-icon">🏢</div>
+                        <h3>Surabaya</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Profile Page -->
+        <div class="page" id="profile">
+            <!-- Photo Banner Section -->
+            <section class="photo-banner">
+                <div class="banner-overlay">
+                    <div class="banner-content">
+                        <h1>Arkan Tech Solutions</h1>
+                        <p>Inovasi Hari Ini untuk Masa Depan</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="profile-content">
+                <div class="profile-card">
+                    <h2>🚀 Tentang Perusahaan Kami</h2>
+                    <p>TechnoVision Solutions adalah perusahaan teknologi terkemuka yang berdiri sejak tahun 2015, berfokus pada solusi digital inovatif dan pengembangan perangkat lunak modern.</p>
+                    <p>Kami bangga memberikan hasil terbaik melalui tim profesional berpengalaman yang penuh semangat pada teknologi dan inovasi.</p>
+                    <p>Kantor pusat kami tersebar di Jakarta, Bandung, dan Surabaya, sehingga dapat melayani klien di seluruh Indonesia dengan standar global.</p>
+                    <p>Dengan pengalaman lebih dari 8 tahun, kami telah menyelesaikan lebih dari 500 proyek untuk berbagai jenis klien, dari startup hingga perusahaan besar.</p>
+                </div>
+
+                <div class="profile-card">
+                    <h2>👁️ Visi Kami</h2>
+                    <p>Menjadi mitra teknologi terdepan di Asia Tenggara yang memberdayakan bisnis melalui solusi transformasi digital inovatif.</p>
+                </div>
+
+                <div class="profile-card">
+                    <h2>🎯 Misi Kami</h2>
+                    <p>Menyediakan solusi teknologi kelas dunia yang mendorong pertumbuhan bisnis, meningkatkan efisiensi, dan menciptakan pengalaman digital yang bermakna.</p>
+                    <ul>
+                        <li>Memberikan solusi inovatif dan andal</li>
+                        <li>Membangun kemitraan jangka panjang</li>
+                        <li>Menciptakan budaya belajar dan inovasi</li>
+                        <li>Berperan dalam kemajuan ekonomi digital Indonesia</li>
+                    </ul>
+                </div>
+
+                <div class="profile-card">
+                    <h2>⭐ Nilai Kami</h2>
+                    <p><strong>Inovasi:</strong> Selalu mencari teknologi terbaru.</p>
+                    <p><strong>Keunggulan:</strong> Menjaga standar tertinggi dalam semua pekerjaan.</p>
+                    <p><strong>Integritas:</strong> Transparansi dan kejujuran.</p>
+                    <p><strong>Kolaborasi:</strong> Kekuatan ada pada kerja tim dan kemitraan.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Page -->
+        <div class="page" id="portfolio">
+            <section class="welcome-section">
+                <h1>Portofolio Kami</h1>
+                <p>Menampilkan karya dan pencapaian terbaik kami</p>
+            </section>
+
+            <div class="profile-content">
+                <div class="profile-card">
+                    <h2>🌐 Pengembangan Website</h2>
+                    <p>Kami telah membuat lebih dari 200 website responsif menggunakan teknologi modern seperti React dan Vue.js.</p>
+                </div>
+
+                <div class="profile-card">
+                    <h2>📱 Aplikasi Mobile</h2>
+                    <p>Mengembangkan 150+ aplikasi iOS & Android yang digunakan jutaan pengguna.</p>
+                </div>
+
+                <div class="profile-card">
+                    <h2>☁️ Solusi Cloud</h2>
+                    <p>Membantu 100+ bisnis migrasi ke cloud dengan AWS, GCP, dan Azure.</p>
+                </div>
+
+                <div class="profile-card">
+                    <h2>🤖 AI & Machine Learning</h2>
+                    <p>Menyediakan 50+ solusi AI seperti chatbot, sistem rekomendasi, hingga analitik prediktif.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Us Page -->
+        <div class="page" id="message">
+            <section class="message-section">
+                <h2>Hubungi Kami</h2>
+                <div class="form-container">
+                    <div>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nama</label>
+                                <input type="text" id="name" name="name">
+                                <div class="error" id="nameError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                                <div class="error" id="emailError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon</label>
+                                <input type="tel" id="phone" name="phone">
+                                <div class="error" id="phoneError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea id="messageText" name="message" placeholder="Tulis pesan anda..."></textarea>
+                                <div class="error" id="messageError"></div>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Kirim</button>
+                        </form>
+                    </div>
+
+                    <div>
+                        <div class="form-output" id="formOutput" style="display: none;">
+                            <h3>Detail Pengiriman Form:</h3>
+                            <p><strong>Waktu Saat Ini:</strong> <span id="currentTime"></span></p>
+                            <p><strong>Nama:</strong> <span id="outputName"></span></p>
+                            <p><strong>Email:</strong> <span id="outputEmail"></span></p>
+                            <p><strong>Telepon:</strong> <span id="outputPhone"></span></p>
+                            <p><strong>Pesan:</strong> <span id="outputMessage"></span></p>
+                        </div>
+
+                        <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+                            <h3>Informasi Kontak</h3>
+                            <p><strong>Alamat:</strong> Jakarta, Bandung, Surabaya</p>
+                            <p><strong>Telepon:</strong> +62-21-1234-5678</p>
+                            <p><strong>Email:</strong> info@technovision.com</p>
+                            <p><strong>Website:</strong> www.technovision.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
